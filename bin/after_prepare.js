@@ -14,7 +14,7 @@ module.exports = function (context) {
 	platforms.ios = require("./lib/ios")(Q, fs, path, require('plist'), require('xcode'));
 	// platforms.browser = require("./lib/browser")(Q, fs, path, req('plist'), req('xcode'));
 
-	return settings.get()
+	/*return settings.get()
 		.then(function (config) {
 			var promises = [];
 			context.opts.platforms.forEach (function (platformName) {
@@ -33,5 +33,5 @@ module.exports = function (context) {
 			console.log ('unhandled exception', err);
 
 			throw err;
-		});
+		});*/
 };
